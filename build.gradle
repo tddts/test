@@ -1,0 +1,39 @@
+
+ant.importBuild('src/main/ant/axis2-wsdl2java.xml') { antTargetName ->
+    println 'comarch_' + antTargetName
+    'comarch_' + antTargetName
+}
+ant.importBuild('src/main/ant/axis2-wsdl2javaMservice.xml') { antTargetName ->
+    println 'mservice_' + antTargetName
+    'mservice_' + antTargetName
+}
+
+ant.importBuild('src/main/ant/axis2-wsdl2javaForStatusMonitoring.xml') { antTargetName ->
+    println 'status_' + antTargetName
+    'status_' + antTargetName
+}
+
+ant.importBuild('src/main/ant/axis2-wsdl2javaForSAP.xml') { antTargetName ->
+    println 'sap_' + antTargetName
+    'sap_' + antTargetName
+}
+
+ant.properties['output.dir'] = '${projectDir}/src/main/java'
+ant.properties['src'] = '${projectDir}/src/main/resources'
+
+task generateFromWsdl() {
+    doLast {
+
+        ant.lifecycleLogLevel = "VERBOSE"
+
+        comarch_generate_axis2_client.execute()
+
+        mservice_generate_axis2_client.execute()
+
+        status_generate_axis2_client.execute()
+
+        sap_generate_axis2_client.execute()
+    }
+}
+
+compileJava.dependsOn generateFromWsdl
