@@ -1,0 +1,23 @@
+comarch_generate_axis2_client
+comarch_comarch_loyalty_management
+comarch_comarch_loyalty_management
+comarch_init
+comarch_init
+Trying to override old definition of task generate_axis2_client
+Trying to override old definition of task generate_axis2_client_wrapped
+mservice_mservice_loyalty_management
+mservice_init
+Trying to override old definition of task generate_axis2_client
+Trying to override old definition of task generate_axis2_client_wrapped
+Trying to override old definition of task generate_axis2_client
+Trying to override old definition of task generate_axis2_client_wrapped
+status_comarch_status_monitoring
+status_init
+Trying to override old definition of task generate_axis2_client
+Trying to override old definition of task generate_axis2_client_wrapped
+Trying to override old definition of task generate_axis2_client
+Trying to override old definition of task generate_axis2_client_wrapped
+Trying to override old definition of task generate_axis2_client
+Trying to override old definition of task generate_axis2_client_wrapped
+sap_sap
+sap_init
