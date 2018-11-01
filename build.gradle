@@ -18,8 +18,8 @@ ant.importBuild('src/main/ant/axis2-wsdl2javaForSAP.xml') { antTargetName ->
     'sap_' + antTargetName
 }
 
-ant.properties['output.dir'] = '${projectDir}/src/main/java'
-ant.properties['src'] = '${projectDir}/src/main/resources'
+ant.properties['output.dir'] = "${projectDir}/src/main/java"
+ant.properties['src'] = "${projectDir}/src/main/resources"
 
 task generateFromWsdl() {
     doLast {
